@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .primary-btn {
+    @apply inline-block bg-sky-600 text-white my-2 py-2 px-4 rounded hover:bg-sky-700;
+  }
+}
+.icon-button.rotate {
+  animation: rotateIcon 1s forwards;
+}
+
+.active {
+  color: cyan;
+}
+.sidebar .active {
+  color: white;
+}
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
