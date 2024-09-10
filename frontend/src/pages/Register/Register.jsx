@@ -144,8 +144,8 @@ const Register = () => {
             <div>
               <p>
                 Already have an account?{" "}
-                <Link to="/login" className="underline">
-                  login
+                <Link to="/login" className="underline text-sky-600">
+                  Login
                 </Link>
               </p>
             </div>

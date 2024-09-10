@@ -4,12 +4,12 @@ import publishImg from "../assets/publish.svg";
 const WebsiteFeature = () => {
   return (
     <div className="container mx-auto p-6 dark:text-white mt-10">
-      <h2 className="text-5xl md:text-6xl text-center font-bold mb-16 text-slate-700 dark:text-white">
+      <h2 className="text-3xl md:text-6xl text-center font-bold mb-16 text-slate-700 dark:text-white">
         Webstie Features
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-10">
         <div className="order-1 md:order-0">
-          <h3 className="text-4xl mb-4  font-bold text-slate-700 dark:text-white">
+          <h3 className="text-3xl mb-4  font-bold text-slate-700 dark:text-white">
             Read Story
           </h3>
           <p>
@@ -29,7 +29,7 @@ const WebsiteFeature = () => {
           <img src={publishImg} alt="" />
         </div>
         <div>
-          <h3 className="text-4xl mb-4  font-bold text-slate-700 dark:text-white">
+          <h3 className="text-3xl mb-4  font-bold text-slate-700 dark:text-white">
             Publish your own Story
           </h3>
           <p>

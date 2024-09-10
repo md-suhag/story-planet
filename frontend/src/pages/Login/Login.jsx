@@ -102,8 +102,8 @@ const Login = () => {
             <div>
               <p>
                 Didn't have an account?{" "}
-                <Link to="/register" className="underline">
-                  create Account
+                <Link to="/register" className="underline text-sky-600">
+                  Create Account
                 </Link>
               </p>
             </div>

@@ -59,7 +59,7 @@ const ViewAllStories = () => {
   }
 
   return (
-    <div className="container mx-auto w-full md:w-4/5 p-4 dark:text-white">
+    <div className="container mx-auto w-full md:w-4/5 p-4 overflow-auto h-screen dark:text-white">
       <h1 className="text-3xl font-bold mb-4">All Stories</h1>
       {stories.length === 0 ? (
         <p>No stories found.</p>
@@ -83,7 +83,7 @@ const ViewAllStories = () => {
                   View Analytices
                 </button>
                 <button
-                  className="primary-btn bg-red-700"
+                  className="primary-btn bg-red-700 hover:bg-red-800"
                   onClick={() => handleDelete(story._id)}
                 >
                   Delete Story

@@ -1,8 +1,8 @@
-import { HiMenuAlt3 } from "react-icons/hi";
+import { CgMenu } from "react-icons/cg";
 
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-// import { GiHamburgerMenu } from "react-icons/gi";
+
 import { AiOutlineClose } from "react-icons/ai";
 
 import ThemeToggle from "./ThemeToggle";
@@ -83,7 +83,7 @@ const Navbar = () => {
             onClick={() => setIsOpen(true)}
             className="text-gray-300  focus:outline-none"
           >
-            <HiMenuAlt3 className="w-6 h-6 text-white" />
+            <CgMenu className="w-6 h-6 text-white" />
           </button>
         </div>
       </div>
@@ -121,7 +121,7 @@ const Navbar = () => {
             Home
           </NavLink>
           <NavLink
-            to="/courses"
+            to="/all-story"
             className="block mb-4 text-white hover:text-cyan-400 transition duration-300"
           >
             All stories

@@ -18,9 +18,9 @@ const Sidebar = () => {
   return (
     <>
       <div
-        className={`  transition-all duration-300 absolute top-0 -left-full z-40 ${
+        className={`  transition-all duration-300 absolute top-0 -left-full bottom-0 z-40 ${
           navStatus ? "left-0 w-1/2" : ""
-        } md:relative md:left-0 flex flex-col gap-3 bg-sky-500 dark:bg-slate-700 p-3 pt-10  md:w-1/5 min-h-screen shadow sidebar `}
+        } md:relative md:left-0 flex flex-col gap-3 bg-sky-500 dark:bg-slate-700 p-3 pt-10  md:w-1/5 min-h-screen shadow sidebar`}
       >
         <NavLink
           className="inline-flex items-center gap-2 bg-sky-400 dark:bg-slate-500 px-2 py-4  text-black  rounded shadow"
