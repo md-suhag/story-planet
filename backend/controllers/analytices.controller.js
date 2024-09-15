@@ -25,24 +25,14 @@ const getTotalOptionsChoice = async (req, res) => {
         $group: {
           _id: "$choiceId",
           count: { $sum: 1 },
+          choiceTitle: { $first: "$choiceTitle" },
         },
-      },
-      {
-        $lookup: {
-          from: "choiceanalytics",
-          localField: "_id",
-          foreignField: "choiceId",
-          as: "choiceData",
-        },
-      },
-      {
-        $unwind: "$choiceData",
       },
       {
         $project: {
           _id: 1,
           count: 1,
-          choiceTitle: "$choiceData.choiceTitle",
+          choiceTitle: 1,
         },
       },
     ]);
