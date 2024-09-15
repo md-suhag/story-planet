@@ -70,11 +70,17 @@ const ViewAllStories = () => {
               <h2 className="text-xl font-semibold">
                 {story.title}{" "}
                 <span className="text-sm">
-                  published by {story.author.name}
+                  published by{" "}
+                  <span className="text-sky-600">{story.author.name}</span>
                 </span>
               </h2>
               <p>{story.description.slice(0, 100) + "..."}</p>
-              <p>Published at: {new Date(story.createdAt).toLocaleString()}</p>
+              <p>
+                Published at:{" "}
+                <span className="text-sky-600">
+                  {new Date(story.createdAt).toLocaleString()}
+                </span>
+              </p>
               <p className="flex gap-2 items-center flex-wrap">
                 <button
                   className="primary-btn"
